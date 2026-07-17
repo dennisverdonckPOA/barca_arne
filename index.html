@@ -1,50 +1,25 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Barcelona Vader & Zoon Citytrip</title>
+<title>Barcelona Vader & Zoon Trip</title>
 
 <style>
-
 body{
+font-family:Arial,sans-serif;
 margin:0;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
-background:#f5f7fa;
+background:#f4f6f8;
 color:#243b53;
-line-height:1.55;
+line-height:1.5;
 }
 
 header{
 background:linear-gradient(135deg,#102a43,#b71c1c);
 color:white;
-padding:30px 20px;
+padding:25px;
 text-align:center;
-}
-
-header h1{
-margin:0;
-}
-
-nav{
-position:sticky;
-top:0;
-background:white;
-padding:10px;
-display:flex;
-gap:8px;
-overflow-x:auto;
-box-shadow:0 2px 8px #0002;
-}
-
-nav a{
-background:#102a43;
-color:white;
-padding:8px 14px;
-border-radius:20px;
-text-decoration:none;
 }
 
 .container{
@@ -56,9 +31,9 @@ padding:15px;
 .card{
 background:white;
 padding:18px;
+margin-bottom:20px;
 border-radius:18px;
-margin-bottom:18px;
-box-shadow:0 3px 12px #0002;
+box-shadow:0 3px 10px #0002;
 }
 
 h2{
@@ -70,32 +45,52 @@ h3{
 color:#b71c1c;
 }
 
-.place-photo{
+img{
 width:100%;
 border-radius:15px;
-margin-bottom:15px;
-max-height:350px;
-object-fit:cover;
+margin:10px 0;
 }
 
 .metro{
 background:#fff8e1;
-border-left:5px solid #f7c948;
 padding:15px;
+border-left:5px solid #f7c948;
 border-radius:10px;
 }
 
 .route{
 background:#edf2f7;
-border-left:5px solid #102a43;
 padding:15px;
+border-left:5px solid #102a43;
 border-radius:10px;
 }
 
 .address{
-background:#f0f4f8;
+background:#eef3f8;
 padding:12px;
 border-radius:10px;
+}
+
+.maps{
+display:inline-block;
+background:#102a43;
+color:white;
+padding:8px 14px;
+border-radius:20px;
+text-decoration:none;
+margin-top:8px;
+}
+
+details{
+background:#edf2f7;
+padding:12px;
+border-radius:12px;
+margin-bottom:10px;
+}
+
+summary{
+font-weight:bold;
+cursor:pointer;
 }
 
 .tip{
@@ -120,47 +115,37 @@ Vader & zoon citytrip
 </h2>
 
 <p>
-⚽ Barça-match • 🌆 Montjuïc • ⛪ Gaudí • 🌴 Barcelona sfeer
+⚽ Barça-match | 🌆 Montjuïc | ⛪ Gaudí | 🌴 Barcelona sfeer
 </p>
 
 </header>
 
 
-<nav>
-
-<a href="#zaterdag">Zaterdag</a>
-<a href="#zondag">Zondag</a>
-<a href="#maandag">Maandag</a>
-<a href="#metro">Metro</a>
-
-</nav>
-
-
 <div class="container">
 
 
-<section class="card">
+<div class="card">
 
 <h2>🗺️ Reisidee</h2>
 
 <p>
-Een citytrip waarbij we Barcelona beleven:
-niet alleen gebouwen bekijken, maar de sfeer voelen.
+Geen race langs alle toeristische attracties.
+We beleven Barcelona:
 </p>
 
 <ul>
-<li>⚽ Een echte Barça-wedstrijd</li>
-<li>🌆 Montjuïc en uitzicht over de stad</li>
+<li>⚽ echte Barça-match</li>
+<li>🌆 uitzicht vanaf Montjuïc</li>
 <li>⛪ Sagrada Família</li>
 <li>🏛️ Gaudí</li>
-<li>🌴 Oude stad en haven</li>
+<li>🌴 oude stad en haven</li>
 </ul>
 
-</section>
+</div>
 
 
 
-<section id="zaterdag" class="card">
+<div class="card">
 
 <h2>🌇 Zaterdag – aankomst</h2>
 
@@ -175,27 +160,29 @@ ibis Barcelona Plaza Glòries 22
 
 Carrer de la Ciutat de Granada 99
 
+<br>
+
+<a class="maps"
+href="https://www.google.com/maps/search/?api=1&query=ibis+Barcelona+Plaza+Glories+22"
+target="_blank">
+
+📍 Open kaart
+
+</a>
+
 </div>
 
 
-<p>
-Na aankomst rustig naar het hotel.
-Als er nog tijd is: eerste wandeling richting moderne Barcelona.
-</p>
+
+<h3>🏙️ Eerste wandeling (indien tijd)</h3>
 
 
-<h3>🏙️ Torre Glòries</h3>
-
-
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Torre_Gl%C3%B2ries_Barcelona.jpg/800px-Torre_Gl%C3%B2ries_Barcelona.jpg"
-alt="Torre Glòries Barcelona">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Torre_Gl%C3%B2ries_Barcelona.jpg/800px-Torre_Gl%C3%B2ries_Barcelona.jpg">
 
 
 <p>
-Een modern symbool van Barcelona.
-De ronde vorm en verlichting maken deze toren vooral
-'s avonds opvallend.
+De Torre Glòries is één van de moderne symbolen van Barcelona.
+Vooral 's avonds valt de verlichting op.
 </p>
 
 
@@ -209,7 +196,7 @@ De ronde vorm en verlichting maken deze toren vooral
 
 ↓
 
-🛍️ Westfield Glòries
+🛍️ Glòries shopping
 
 ↓
 
@@ -222,23 +209,14 @@ De ronde vorm en verlichting maken deze toren vooral
 </div>
 
 
-</section>
+</div>
 
 
 
 
+<div class="card">
 
-<section id="zondag" class="card">
-
-
-<h2>⚽ Zondag – Montjuïc, Sagrada & Barça-match</h2>
-
-
-<p>
-De wedstrijd is het hoogtepunt.
-Daarom bezoeken we het stadion niet overdag.
-De echte sfeer bewaren we voor de avond.
-</p>
+<h2>⚽ Zondag – Montjuïc & Barça</h2>
 
 
 <h3>🚇 Hotel → Montjuïc</h3>
@@ -252,21 +230,23 @@ De echte sfeer bewaren we voor de avond.
 
 🔴 L1 richting Hospital de Bellvitge
 
-<br><br>
+<br>
 
-Glòries
-
-↓
-
-Catalunya
+Glòries → Marina → Arc de Triomf → Urquinaona → Catalunya
 
 <br><br>
+
+Overstappen:
+
+<br>
 
 🟢 L3 richting Zona Universitària
 
 <br><br>
 
-Uitstappen:
+Afstappen:
+
+<br>
 
 Espanya
 
@@ -274,33 +254,31 @@ Espanya
 
 
 
-<h3>🌆 Montjuïc</h3>
+<h3>🌆 Montjuïc wandeling</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Barcelona_from_Montjuic.jpg/800px-Barcelona_from_Montjuic.jpg"
-alt="Barcelona uitzicht vanaf Montjuïc">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Barcelona_from_Montjuic.jpg/800px-Barcelona_from_Montjuic.jpg">
 
 
 <div class="route">
 
-🚇 Espanya
+Espanya
 
 ↓
 
-⛲ Font Màgica
+Font Màgica
 
 ↓
 
-🏛️ Palau Nacional
+Palau Nacional
 
 ↓
 
-🌅 uitzichtpunt
+Uitzichtpunt
 
 ↓
 
-🏟️ Olympisch Stadion
+Olympisch Stadion
 
 </div>
 
@@ -308,35 +286,31 @@ alt="Barcelona uitzicht vanaf Montjuïc">
 <h3>⛲ Font Màgica</h3>
 
 <p>
-De beroemde fonteinen aan de voet van Montjuïc.
-Een plaats waar veel bezoekers hun eerste grote
-zicht op Barcelona krijgen.
+De beroemde fontein van Barcelona.
+Een plaats waar veel bezoekers hun eerste grote zicht op de stad krijgen.
 </p>
 
 
 <h3>🏛️ Palau Nacional</h3>
 
 <p>
-Hier krijg je één van de mooiste gratis uitzichten over de stad.
-Je ziet de wijken, zee en bergen.
+Hier krijg je één van de mooiste gratis uitzichten over Barcelona.
 </p>
 
 
-</section>
-<section class="card">
+</div>
+<div class="card">
 
 
 <h3>🏟️ Olympisch Stadion</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Estadi_Ol%C3%ADmpic_Llu%C3%ADs_Companys_2023.jpg/800px-Estadi_Ol%C3%ADmpic_Llu%C3%ADs_Companys_2023.jpg"
-alt="Olympisch Stadion Barcelona">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Estadi_Ol%C3%ADmpic_Llu%C3%ADs_Companys_2023.jpg/800px-Estadi_Ol%C3%ADmpic_Llu%C3%ADs_Companys_2023.jpg">
 
 
 <p>
-Het Olympisch Stadion werd bekend door de Olympische Spelen
-van 1992. Barcelona zette zich toen wereldwijd op de kaart.
+Het Olympisch Stadion werd bekend door de Olympische Spelen van 1992.
+Barcelona kreeg toen wereldwijde aandacht.
 </p>
 
 
@@ -361,7 +335,6 @@ Rustig tempo: ongeveer 2 uur
 
 <div class="metro">
 
-
 🏟️ Olympisch Stadion
 
 ↓
@@ -374,7 +347,7 @@ Rustig tempo: ongeveer 2 uur
 
 ↓
 
-🚇 Paral·lel
+Paral·lel
 
 
 <br><br>
@@ -396,7 +369,6 @@ Diagonal
 
 Sagrada Família
 
-
 </div>
 
 
@@ -404,83 +376,60 @@ Sagrada Família
 <h3>⛪ Sagrada Família</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sagrada_Familia_01.jpg/800px-Sagrada_Familia_01.jpg"
-alt="Sagrada Família Barcelona">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Sagrada_Familia_01.jpg/800px-Sagrada_Familia_01.jpg">
 
 
 <div class="address">
 
 Carrer de Mallorca 401
 
+<br>
+
+<a class="maps"
+href="https://www.google.com/maps/search/?api=1&query=Sagrada+Familia+Barcelona"
+target="_blank">
+
+📍 Open kaart
+
+</a>
+
 </div>
 
 
 <p>
 De bekendste kerk van Barcelona.
-Antoni Gaudí ontwierp deze basiliek met inspiratie uit
-de natuur. De bouw begon in 1882 en gaat vandaag nog verder.
+Gaudí ontwierp dit gebouw met inspiratie uit de natuur.
+De bouw begon in 1882 en gaat nog altijd verder.
 </p>
-
-
-<div class="tip">
-
-Beste foto:
-
-<br>
-
-📸 Plaça de Gaudí
-
-<br>
-
-Daar zie je de kerk mooi weerspiegeld in het water.
-
-</div>
-
-
-
-<h3>🚶 Gaudí-wandeling</h3>
-
-
-<div class="route">
-
-⛪ Sagrada Família
-
-↓
-
-🏛️ La Pedrera
-
-↓
-
-🏛️ Casa Batlló
-
-↓
-
-🌴 Plaça Catalunya
-
-</div>
 
 
 
 <h3>🏛️ La Pedrera</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Casa_Mila_Barcelona_2009.jpg/800px-Casa_Mila_Barcelona_2009.jpg"
-alt="Casa Milà La Pedrera">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Casa_Mila_Barcelona_2009.jpg/800px-Casa_Mila_Barcelona_2009.jpg">
 
 
 <div class="address">
 
 Passeig de Gràcia 92
 
+<br>
+
+<a class="maps"
+href="https://www.google.com/maps/search/?api=1&query=Casa+Mila+La+Pedrera+Barcelona"
+target="_blank">
+
+📍 Open kaart
+
+</a>
+
 </div>
 
 
 <p>
 Een gebouw dat lijkt te bewegen.
-Geen rechte lijnen, maar golvende vormen en bijzondere
-stenen details.
+De golvende gevel toont de typische fantasie van Gaudí.
 </p>
 
 
@@ -488,21 +437,29 @@ stenen details.
 <h3>🏛️ Casa Batlló</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Casa_Batllo_Barcelona_2013.jpg/800px-Casa_Batllo_Barcelona_2013.jpg"
-alt="Casa Batlló Barcelona">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Casa_Batllo_Barcelona_2013.jpg/800px-Casa_Batllo_Barcelona_2013.jpg">
 
 
 <div class="address">
 
 Passeig de Gràcia 43
 
+<br>
+
+<a class="maps"
+href="https://www.google.com/maps/search/?api=1&query=Casa+Batllo+Barcelona"
+target="_blank">
+
+📍 Open kaart
+
+</a>
+
 </div>
 
 
 <p>
-Een sprookjesachtig gebouw van Gaudí.
-Het dak doet denken aan een draak en de gevel zit vol kleuren.
+Een sprookjesachtig gebouw.
+Het dak doet denken aan een drakenrug.
 </p>
 
 
@@ -510,9 +467,7 @@ Het dak doet denken aan een draak en de gevel zit vol kleuren.
 <h3>🌴 Plaça Catalunya</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Barcelona_-_Pla%C3%A7a_Catalunya.jpg/800px-Barcelona_-_Pla%C3%A7a_Catalunya.jpg"
-alt="Plaça Catalunya">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Barcelona_-_Pla%C3%A7a_Catalunya.jpg/800px-Barcelona_-_Pla%C3%A7a_Catalunya.jpg">
 
 
 <p>
@@ -521,25 +476,23 @@ Hier komen de oude en nieuwe stad samen.
 </p>
 
 
-</section>
+</div>
 
 
 
 
-
-<section class="card">
+<div class="card">
 
 <h2>⚽ Avond – FC Barcelona wedstrijd</h2>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Camp_Nou_2014.jpg/800px-Camp_Nou_2014.jpg"
-alt="Camp Nou Barcelona">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Camp_Nou_2014.jpg/800px-Camp_Nou_2014.jpg">
 
 
 <p>
-De echte Barça-beleving begint voor de aftrap:
-supporters, shirts, gezangen en spanning rond het stadion.
+De magie zit niet alleen in de wedstrijd,
+maar in de sfeer ervoor:
+supporters, shirts en gezangen.
 </p>
 
 
@@ -559,9 +512,17 @@ Carrer del Comte de Güell 56
 
 <br>
 
-± 10 minuten wandelen van stadion
+<a class="maps"
+href="https://www.google.com/maps/search/?api=1&query=Mamma+Italia+Barcelona"
+target="_blank">
+
+📍 Open kaart
+
+</a>
+
 
 <br><br>
+
 
 Alternatief:
 
@@ -582,14 +543,11 @@ Travessera de les Corts 126
 
 <div class="metro">
 
-
 Plaça Catalunya
-
 
 ↓
 
 🟢 L3 richting Zona Universitària
-
 
 ↓
 
@@ -599,12 +557,12 @@ of
 
 Palau Reial
 
-
 ↓
 
-🚶 ± 10 minuten wandelen
+🚶 ±10 minuten wandelen
 
 </div>
+
 
 
 
@@ -613,60 +571,45 @@ Palau Reial
 
 <div class="metro">
 
-
-Stadion
+Camp Nou
 
 ↓
 
 🚶 Les Corts / Palau Reial
 
-
 ↓
 
 🟢 L3 richting Trinitat Nova
-
 
 ↓
 
 Catalunya
 
-
 ↓
 
 🔴 L1 richting Fondo
-
 
 ↓
 
 Glòries
 
-
 ↓
 
 🚶 Hotel
 
-
 </div>
 
 
-<div class="tip">
-
-Na de wedstrijd kan het druk zijn.
-Neem rustig de tijd om het stadion te verlaten.
-
 </div>
+<div class="card">
 
 
-</section>
-<section id="maandag" class="card">
-
-
-<h2>🌴 Maandag – Rambla, Boqueria, Gotische wijk & zee</h2>
+<h2>🌴 Maandag – Het echte Barcelona</h2>
 
 
 <p>
-De laatste dag draait om het echte stadsgevoel.
-Geen lange bezoeken binnen, maar wandelen door Barcelona.
+Laatste dag:
+geen grote binnenbezoeken, maar de sfeer van de stad.
 </p>
 
 
@@ -676,37 +619,15 @@ Geen lange bezoeken binnen, maar wandelen door Barcelona.
 
 <div class="metro">
 
-
-🚶 Hotel → metro Glòries
-
+🚶 Hotel → Glòries
 
 <br><br>
-
 
 🔴 L1 richting Hospital de Bellvitge
 
-
 <br><br>
 
-
-Glòries
-
-↓
-
-Marina
-
-↓
-
-Arc de Triomf
-
-↓
-
-Urquinaona
-
-↓
-
-Catalunya
-
+Glòries → Marina → Arc de Triomf → Urquinaona → Catalunya
 
 </div>
 
@@ -715,14 +636,12 @@ Catalunya
 <h3>🌴 Plaça Catalunya</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Barcelona_-_Pla%C3%A7a_Catalunya.jpg/800px-Barcelona_-_Pla%C3%A7a_Catalunya.jpg"
-alt="Plaça Catalunya">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Barcelona_-_Pla%C3%A7a_Catalunya.jpg/800px-Barcelona_-_Pla%C3%A7a_Catalunya.jpg">
 
 
 <p>
-Het hart van Barcelona.
-Een groot plein waar de belangrijkste straten samenkomen.
+Het centrale plein van Barcelona.
+Het perfecte startpunt voor de oude stad.
 </p>
 
 
@@ -730,9 +649,7 @@ Een groot plein waar de belangrijkste straten samenkomen.
 <h3>🌺 La Rambla</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/La_Rambla_Barcelona.jpg/800px-La_Rambla_Barcelona.jpg"
-alt="La Rambla Barcelona">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/La_Rambla_Barcelona.jpg/800px-La_Rambla_Barcelona.jpg">
 
 
 <div class="address">
@@ -744,7 +661,7 @@ La Rambla
 
 <p>
 De beroemdste wandelstraat van Barcelona.
-Straatmuzikanten, bloemen, winkels en veel leven.
+Vol leven, straatmuzikanten en winkels.
 </p>
 
 
@@ -752,21 +669,28 @@ Straatmuzikanten, bloemen, winkels en veel leven.
 <h3>🥭 Mercat de la Boqueria</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Mercat_de_Sant_Josep_de_la_Boqueria.jpg/800px-Mercat_de_Sant_Josep_de_la_Boqueria.jpg"
-alt="Boqueria markt">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Mercat_de_Sant_Josep_de_la_Boqueria.jpg/800px-Mercat_de_Sant_Josep_de_la_Boqueria.jpg">
 
 
 <div class="address">
 
 La Rambla 91
 
+<br>
+
+<a class="maps"
+href="https://www.google.com/maps/search/?api=1&query=Mercat+de+la+Boqueria"
+target="_blank">
+
+📍 Open kaart
+
+</a>
+
 </div>
 
 
 <p>
-De bekendste markt van Barcelona.
-Een kleurrijke plaats met fruit, tapas en lokale producten.
+Een kleurrijke markt met fruit, tapas en lokale producten.
 </p>
 
 
@@ -774,14 +698,12 @@ Een kleurrijke plaats met fruit, tapas en lokale producten.
 <h3>🍷 Plaça Reial</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Placa_Reial_Barcelona.jpg/800px-Placa_Reial_Barcelona.jpg"
-alt="Plaça Reial Barcelona">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Placa_Reial_Barcelona.jpg/800px-Placa_Reial_Barcelona.jpg">
 
 
 <p>
 Een prachtig plein met palmbomen en bogen.
-Ideaal om even te zitten en de sfeer te voelen.
+Een ideale pauzeplaats.
 </p>
 
 
@@ -789,21 +711,12 @@ Ideaal om even te zitten en de sfeer te voelen.
 <h3>🏰 Barri Gòtic</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Carrer_del_Bisbe_Barcelona.jpg/800px-Carrer_del_Bisbe_Barcelona.jpg"
-alt="Gotische wijk Barcelona">
-
-
-<div class="address">
-
-Ciutat Vella
-
-</div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Carrer_del_Bisbe_Barcelona.jpg/800px-Carrer_del_Bisbe_Barcelona.jpg">
 
 
 <p>
-De oudste wijk van Barcelona.
-Smalle straatjes, verborgen pleinen en middeleeuwse gebouwen.
+De oudste wijk van Barcelona:
+smalle straatjes en middeleeuwse gebouwen.
 </p>
 
 
@@ -830,14 +743,12 @@ Niet missen:
 <h3>⚓ Port Vell</h3>
 
 
-<img class="place-photo"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Port_Vell_Barcelona.jpg/800px-Port_Vell_Barcelona.jpg"
-alt="Port Vell Barcelona">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Port_Vell_Barcelona.jpg/800px-Port_Vell_Barcelona.jpg">
 
 
 <p>
-De oude haven van Barcelona.
-Een mooie laatste wandeling langs het water.
+De oude haven.
+Mooie afsluiter met zicht op zee.
 </p>
 
 
@@ -845,14 +756,7 @@ Een mooie laatste wandeling langs het water.
 <h3>✈️ Port Vell → luchthaven</h3>
 
 
-<p>
-Vanaf Port Vell wandelen we naar metro Drassanes.
-Deze ligt vlakbij.
-</p>
-
-
 <div class="route">
-
 
 ⚓ Port Vell
 
@@ -867,156 +771,13 @@ Deze ligt vlakbij.
 </div>
 
 
-
 <div class="metro">
-
-
-🚇 Drassanes
-
-
-↓
-
-🟢 L3 richting Zona Universitària
-
-
-↓
-
-Zona Universitària
-
-
-↓
-
-🟠 L9 Sud richting Aeroport
-
-
-↓
-
-✈️ Aeroport
-
-
-</div>
-
-
-
-<div class="tip">
-
-Vertrek richting luchthaven:
-
-15:30 – 16:00
-
-<br>
-
-Zo is er ruime marge voor vlucht om 19u.
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section id="metro" class="card">
-
-
-<h2>🚇 Metro-spiekkaart</h2>
-
-
-<div class="route">
-
-
-🏨 Hotel → Montjuïc
-
-<br><br>
-
-Glòries
-
-↓
-
-🔴 L1
-
-↓
-
-Catalunya
-
-↓
-
-🟢 L3
-
-↓
-
-Espanya
-
-
-<br><br><br>
-
-
-🌆 Montjuïc → Sagrada
-
-<br><br>
-
-Funicular
-
-↓
-
-Paral·lel
-
-↓
-
-🟢 L3
-
-↓
-
-Diagonal
-
-↓
-
-🟦 L5
-
-↓
-
-Sagrada Família
-
-
-<br><br><br>
-
-
-⚽ Stadion → Hotel
-
-<br><br>
-
-Les Corts
-
-↓
-
-🟢 L3
-
-↓
-
-Catalunya
-
-↓
-
-🔴 L1
-
-↓
-
-Glòries
-
-
-<br><br><br>
-
-
-⚓ Port Vell → luchthaven
-
-<br><br>
 
 Drassanes
 
 ↓
 
-🟢 L3
+🟢 L3 richting Zona Universitària
 
 ↓
 
@@ -1024,127 +785,283 @@ Zona Universitària
 
 ↓
 
-🟠 L9 Sud
+🟠 L9 Sud richting Aeroport
 
 ↓
 
-Aeroport
+✈️ Aeroport
+
+</div>
+
+
+<div class="tip">
+
+Vertrek rond 15:30–16:00
+
+<br>
+
+voor vlucht om 19:00
+
+</div>
 
 
 </div>
 
 
-</section>
+
+
+
+<div class="card">
+
+<h2>🚇 Metro-spiekkaarten</h2>
+
+
+
+<details>
+
+<summary>🏨 Hotel → Montjuïc</summary>
+
+<p>
+
+Glòries
+
+<br>
+
+🔴 L1
+
+<br>
+
+Catalunya
+
+<br>
+
+🟢 L3
+
+<br>
+
+Espanya
+
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>🌆 Montjuïc → Sagrada</summary>
+
+<p>
+
+Funicular Montjuïc
+
+<br>
+
+Paral·lel
+
+<br>
+
+🟢 L3
+
+<br>
+
+Diagonal
+
+<br>
+
+🟦 L5
+
+<br>
+
+Sagrada Família
+
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>⚽ Stadion → Hotel</summary>
+
+<p>
+
+Les Corts
+
+<br>
+
+🟢 L3
+
+<br>
+
+Catalunya
+
+<br>
+
+🔴 L1
+
+<br>
+
+Glòries
+
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>⚓ Port Vell → luchthaven</summary>
+
+<p>
+
+Drassanes
+
+<br>
+
+🟢 L3
+
+<br>
+
+Zona Universitària
+
+<br>
+
+🟠 L9 Sud
+
+<br>
+
+Aeroport
+
+</p>
+
+</details>
+
+
+</div>
 
 
 
 
 
-<section class="card">
+<div class="card">
 
+<h2>📍 Adressenlijst</h2>
 
-<h2>📍 Belangrijke adressen</h2>
 
 
 <div class="address">
 
-
-🏨 ibis Barcelona Plaza Glòries 22
-
-<br>
-Carrer de la Ciutat de Granada 99
-
-
-<br><br>
-
-
-⚽ Spotify Camp Nou
+🏨 Hotel ibis Barcelona Plaza Glòries 22
 
 <br>
-Carrer d'Arístides Maillol 12
 
+<a class="maps"
+href="https://www.google.com/maps/search/?api=1&query=ibis+Barcelona+Plaza+Glories+22"
+target="_blank">
 
-<br><br>
+📍 Open kaart
 
-
-⛪ Sagrada Família
-
-<br>
-Carrer de Mallorca 401
-
-
-<br><br>
-
-
-🏛️ La Pedrera
-
-<br>
-Passeig de Gràcia 92
-
-
-<br><br>
-
-
-🏛️ Casa Batlló
-
-<br>
-Passeig de Gràcia 43
-
-
-<br><br>
-
-
-🥭 Boqueria
-
-<br>
-La Rambla 91
-
-
-<br><br>
-
-
-🍷 Plaça Reial
-
-<br>
-Plaça Reial
-
-
-<br><br>
-
-
-⚓ Port Vell
-
-<br>
-Barcelona
-
-
-<br><br>
-
-
-✈️ Airport
-
-<br>
-El Prat de Llobregat
-
+</a>
 
 </div>
 
 
-</section>
+
+<div class="address">
+
+⚽ Camp Nou
+
+<br>
+
+Carrer d'Arístides Maillol 12
+
+<br>
+
+<a class="maps"
+href="https://www.google.com/maps/search/?api=1&query=Camp+Nou+Barcelona"
+target="_blank">
+
+📍 Open kaart
+
+</a>
+
+</div>
 
 
 
+<div class="address">
 
-<footer>
+⛪ Sagrada Família
 
-🇪🇸 Barcelona Vader & zoon
+<br>
 
-<br><br>
+Carrer de Mallorca 401
 
-⚽ Barça • 🌆 Montjuïc • ⛪ Gaudí • 🌴 Stadssfeer
+<br>
 
-</footer>
+<a class="maps"
+href="https://www.google.com/maps/search/?api=1&query=Sagrada+Familia+Barcelona"
+target="_blank">
 
+📍 Open kaart
+
+</a>
+
+</div>
+
+
+
+<div class="address">
+
+🏛️ La Pedrera
+
+<br>
+
+Passeig de Gràcia 92
+
+</div>
+
+
+
+<div class="address">
+
+🏛️ Casa Batlló
+
+<br>
+
+Passeig de Gràcia 43
+
+</div>
+
+
+
+<div class="address">
+
+🥭 Boqueria
+
+<br>
+
+La Rambla 91
+
+</div>
+
+
+
+<div class="address">
+
+⚓ Port Vell
+
+<br>
+
+Barcelona
+
+</div>
+
+
+</div>
 
 
 </div>
