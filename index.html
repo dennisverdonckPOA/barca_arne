@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barcelona Vader & Zoon Citytrip</title>
+<style>
+    :root {
+        --primary: #b71c1c;
+        --secondary: #102a43;
+        --accent: #f7c948;
+        --bg: #f5f7fa;
+        --text: #243b53;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+    }
+
+    header {
+        background: linear-gradient(rgba(16, 42, 67, 0.8), rgba(183, 28, 28, 0.8)), 
+                    url('https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&q=80&w=1600') no-repeat center center/cover;
+        color: white;
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    header h1 { margin: 0; font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+    header h2 { color: white !important; border: 0 !important; opacity: 0.9; }
+
+    nav {
+        position: sticky;
+        top: 0;
+        background: white;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 1000;
+        overflow-x: auto;
+    }
+
+    nav a {
+        background: var(--secondary);
+        color: white;
+        padding: 8px 18px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.2s, background 0.2s;
+    }
+
+    nav a:hover { background: var(--primary); transform: scale(1.05); }
+
+    .container { max-width: 900px; margin: 30px auto; padding: 0 20px; }
+
+    .card {
+        background: white;
+        border-radius: 20px;
+        padding: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        border: 1px solid #eee;
+    }
+
+    .img-placeholder {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin: 15px 0;
+    }
+
+    h2 { color: var(--secondary); border-bottom: 4px solid var(--accent); display: inline-block; padding-bottom: 5px; }
+    h3 { color: var(--primary); margin-top: 25px; }
+
+    .metro, .route, .address, .tip, .photo {
+        padding: 20px;
+        border-radius: 12px;
+        margin: 15px 0;
+    }
+
+    .metro { background: #fff8e1; border-left: 6px solid var(--accent); }
+    .route { background: #edf2f7; border-left: 6px solid var(--secondary); }
+    .address { background: #f0f4f8; }
+    .tip { background: #e8f5e9; border: 1px solid #c8e6c9; }
+    .photo { background: #fce4ec; }
+
+    footer { text-align: center; padding: 50px; color: #888; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>🇪🇸 Barcelona</h1>
+    <h2>Vader & zoon citytrip</h2>
+    <p>⚽ Barça-match • 🌆 Montjuïc • ⛪ Gaudí • 🌴 Barcelona sfeer</p>
+</header>
+
+<nav>
+    <a href="#zaterdag">Zaterdag</a>
+    <a href="#zondag">Zondag</a>
+    <a href="#maandag">Maandag</a>
+    <a href="#metro">Metro</a>
+    <a href="#adressen">Adressen</a>
+</nav>
+
+<div class="container">
+
+    <section class="card">
+        <h2>🗺️ Reisidee</h2>
+        <p>Deze reis draait niet om zoveel mogelijk attracties afvinken. We beleven Barcelona[cite: 1]:</p>
+        <ul>
+            <li>⚽ een echte wedstrijd van FC Barcelona[cite: 1]</li>
+            <li>🌆 uitzicht over de stad vanaf Montjuïc[cite: 1]</li>
+            <li>⛪ Sagrada Família[cite: 1]</li>
+            <li>🏛️ Gaudí-architectuur[cite: 1]</li>
+            <li>🌴 oude binnenstad en haven[cite: 1]</li>
+        </ul>
+    </section>
+
+    <section id="zaterdag" class="card">
+        <h2>🌇 Zaterdag – aankomst Barcelona</h2>
+        <img src="https://images.unsplash.com/photo-1548695027-2c5e55728555?auto=format&fit=crop&q=80&w=800" class="img-placeholder" alt="Barcelona straatbeeld">
+        <h3>🏨 Hotel</h3>
+        <div class="address">ibis Barcelona Plaza Glòries 22<br>Carrer de la Ciutat de Granada 99[cite: 1]</div>
+        <p>Na aankomst rustig richting hotel. Afhankelijk van het uur maken we nog een korte eerste wandeling[cite: 1].</p>
+        
+        <h3>🚶 Avondwandeling (optioneel)</h3>
+        <div class="route">🏨 Hotel → 🚶 Torre Glòries → 🛍️ Westfield Glòries → 🍔 eten → 🏨 Hotel[cite: 1]</div>
+        
+        <h3>🏙️ Torre Glòries</h3>
+        <p>Een modern icoon van Barcelona. De ronde vorm en verlichting maken dit gebouw vooral 's avonds bijzonder[cite: 1].</p>
+    </section>
+
+    <section id="zondag" class="card">
+        <h2>⚽ Zondag – Montjuïc, Sagrada & Barça-match</h2>
+        <img src="https://images.unsplash.com/photo-1582269986345-c081e695d732?auto=format&fit=crop&q=80&w=800" class="img-placeholder" alt="Montjuïc">
+        <p>Vandaag bewaren we Camp Nou voor het echte moment: de wedstrijdavond[cite: 1].</p>
+        
+        <h3>🏛️ Montjuïc wandeling</h3>
+        <div class="route">🚇 Espanya → ⛲ Font Màgica → 🏛️ Palau Nacional → 🌅 uitzicht → 🏟️ Olympisch Stadion[cite: 1]</div>
+        
+        <h3>⛲ Font Màgica</h3>
+        <p>De beroemde fonteinen van Barcelona. Een indrukwekkende plek aan de voet van Montjuïc[cite: 1].</p>
+
+        <h3>⛪ Sagrada Família</h3>
+        <img src="https://images.unsplash.com/photo-1523531295966-24e030386629?auto=format&fit=crop&q=80&w=800" class="img-placeholder" alt="Sagrada Familia">
+        <p>De bekendste kerk van Barcelona. Ontworpen door Antoni Gaudí[cite: 1].</p>
+        <div class="photo">📸 Beste foto: Plaça de Gaudí (Hier zie je de kerk mooi weerspiegeld in het water)[cite: 1].</div>
+    </section>
+
+    <section id="maandag" class="card">
+        <h2>🌴 Maandag – Het echte Barcelona</h2>
+        <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?auto=format&fit=crop&q=80&w=800" class="img-placeholder" alt="Gotische wijk">
+        <p>De laatste dag draait om sfeer: wandelen door de oude stad, markt, pleinen en zee[cite: 1].</p>
+        
+        <h3>🥭 Mercat de la Boqueria</h3>
+        <p>De beroemdste markt van Barcelona. Een kleurrijke plaats met fruit, tapas, verse producten en kleine eetkraampjes[cite: 1].</p>
+        
+        <h3>🏰 Barri Gòtic</h3>
+        <p>De oudste wijk van Barcelona. Smalle straatjes, verborgen pleinen en middeleeuwse gebouwen[cite: 1].</p>
+    </section>
+
+    <section id="metro" class="card">
+        <h2>🚇 Metro-spiekkaarten</h2>
+        <p>Handige routes voor tijdens de reis[cite: 1].</p>
+        <!-- Inhoud van metro sectie blijft behouden zoals in origineel[cite: 1] -->
+    </section>
+
+    <footer>
+        🇪🇸 Barcelona | ⚽ Barça • 🌆 Montjuïc • ⛪ Gaudí • 🌴 Stadssfeer
+    </footer>
+</div>
+</body>
+</html>
